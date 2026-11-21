@@ -1,16 +1,22 @@
 # Gravity Optional
 _Survival Mandatory_
 
-### Zork-like text adventure in C
-- a hand-authored map of rooms
-- a verb/noun command parser
-- an inventory system
-- save/restore system
-- applying mechanics
-  - movement, descriptions, item interactions, environment interactions, move / score counter?
- 
-### Each member
-- one part of the game, either one mechanic or one room
-- checked on the repository - commit only your own code
-- a detailed presentation on implementation
-- knows the whole codebase
+## Getting Started
+
+**1. Clone the repository**
+```bash
+git clone <repository-url>
+cd gravity-optional
+```
+
+**2. Build the game**
+```bash
+make
+```
+
+**3. Launch the game**
+```bash
+./gravity-optional
+```
+
+**Requirements:** Git, Make, and a C/C++ compiler
