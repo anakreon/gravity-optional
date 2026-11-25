@@ -1,7 +1,5 @@
 #pragma once
 
-#include <string>
-
 enum class Command {
     Look,
     Move,
@@ -13,4 +11,4 @@ enum class Command {
     Unknown
 };
 
-Command parse_command(const std::string& input);
+Command parse_command(char *input);

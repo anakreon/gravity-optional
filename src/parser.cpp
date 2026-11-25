@@ -1,9 +1,11 @@
+#include <string.h>
 #include "parser.h"
 
-Command parse_command(const std::string& input) {
-    if (input == "look") return Command::Look;
-    if (input == "quit") return Command::Quit;
-    if (input == "inventory") return Command::Inventory;
+Command parse_command(char *input) {
+
+    if(strcmp(input, "look") == 0) return Command::Look;
+    if(strcmp(input, "quit") == 0) return Command::Quit;
+    if(strcmp(input, "inventory") == 0) return Command::Inventory;
 
     return Command::Unknown;
 }
