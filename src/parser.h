@@ -1,14 +1,5 @@
 #pragma once
 
-enum class Command {
-    Look,
-    Move,
-    Take,
-    Inventory,
-    Save,
-    Restore,
-    Quit,
-    Unknown
-};
+#include "command.h"
 
-Command parse_command(char *input);
+struct Command parse_command(char *input);
